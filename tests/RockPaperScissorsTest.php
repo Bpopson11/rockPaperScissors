@@ -9,14 +9,14 @@
         {
             //Arrange
             $test_RockPaperScissors = new RockPaperScissors;
-            $first_input = "rock";
-            $second_input = "scissors";
+            $first_input = "scissors";
+            $second_input = "rock";
 
             //Act
             $result = $test_RockPaperScissors->playGame($first_input, $second_input);
 
             //Assert
-            $this->assertEquals("Player 1", $result);
+            $this->assertEquals("Player 2", $result); //outcomes for both player 1 and player 2 were tested and passed.
         }
     }
 
