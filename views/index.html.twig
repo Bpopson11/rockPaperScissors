@@ -3,34 +3,30 @@
     <head>
       <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
       <link rel="stylesheet" href="css/styles.css" media="screen">
-      <title>THE home page</title>
+      <title>Let's Play!</title>
     </head>
     <body>
         <div class="container">
-            <form action="/created" method='post'>
+
             <h1>Lets Play Rock Paper Scissors!</h1>
-
-            <form action="/empty" method='post'>
-            </form>
-
-            {% if contacts is not empty%}
-                <h2>Existing Contacts:</h2>
-                    {% for contact in contacts %}
-                        <h4>{{ contact.getName }}</h4>
-                        <li>Phone Number: {{ contact.getNumber }}</li>
-                        <li>Address: {{ contact.getAddress }}</li>
-                    {% endfor %}
-                {% endif %}
-
-            {% if contacts is empty%}
-                <h2>No Existing Contacts</h2>
-                <h4>Please complete form to create a contact</h4>
-            {% endif %}
-
-            <br>
-            <form action='/delete_tasks' method='post'>
-                <button type='submit' class='btn btn-danger'>Delete Existing Contacts</button>
-            </form>
+              <div id="radio">
+                  <span class="image-radio">
+                      <input name="input" type="radio"  value="rock"/>
+                      <img src="images/rock.png">
+                  </span><br>
+              </div>
+              <div id="radio">
+                  <span class="image-radio">
+                      <input name="input" type="radio"  value="paper"/>
+                      <img src="images/paper.jpg">
+                  </span><br>
+              </div>
+              <div id="radio">
+                  <span class="image-radio">
+                      <input name="input" type="radio"  value="scissors"/>
+                      <img src="images/scissors.jpg">
+                  </span>
+              </div>
         </div>
     </body>
 </html>

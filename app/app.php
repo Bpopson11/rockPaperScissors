@@ -9,7 +9,7 @@
     ));
 
     $app->get("/", function() use ($app) {
-        return $app['twig']->render('form.twig');
+        return $app['twig']->render('index.html.twig');
     });
 
 
