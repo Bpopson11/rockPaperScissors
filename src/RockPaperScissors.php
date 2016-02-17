@@ -4,8 +4,6 @@ class RockPaperScissors
 {
       function playGame($first_input, $second_input)
       {
-          $inputs = array('Player1' => $first_input, 'Player2' => $second_input);
-
           if ($first_input == $second_input){
               return "It's a Draw!";
           } elseif ($first_input == "paper" && $second_input == "rock"){
@@ -21,3 +19,26 @@ class RockPaperScissors
 }
 
 ?>
+
+<!-- alternate option for method -->
+<!-- function playRPS($input1, $input2)
+{
+    if ($input1 == $input2) {
+        return "draw";
+    } elseif ($input1 == "rock") {
+        if ($input2 == "scissors") {
+            return "Player 1";
+        } else {
+            return "Player 2";
+        }
+    } elseif ($input1 == "paper") {
+        if ($input2 == "scissors") {
+            return "Player 2";
+        } else {
+            return "Player 1";
+        }
+    } elseif ($input1 == "scissors") {
+        if ($input2 == "paper") {
+            return "Player 1";
+        } else {
+            return "Player 2"; -->
