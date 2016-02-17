@@ -12,6 +12,12 @@
         return $app['twig']->render('index.html.twig');
     });
 
+    $app->get("/firstpick", function() use ($app){
+     $new_game = new RockPaperScissors;
+     $first_player = $new_game->playGame($_GET['input']);
+     return $app['twig']->render('second.html.twig', array('result' => $first_player));
+  });
+
 
     return $app;
 ?>

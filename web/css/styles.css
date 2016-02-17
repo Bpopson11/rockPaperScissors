@@ -3,3 +3,7 @@ img {
   width: 200px;
   padding-bottom: 20px;
 }
+.winner {
+  background-image: url(../images/winner.jpg);
+  background-repeat: space;
+}
