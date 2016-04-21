@@ -2,7 +2,7 @@
 
 #### _This is a PHP based app using Silex and Twig to create a basic Rock Paper Scissors game._
 
-#### By _**Brianna Popson**_
+#### By _**Brianna Popson and Afton Downey**_
 
 ## Description
 
